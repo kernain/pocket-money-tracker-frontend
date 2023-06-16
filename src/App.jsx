@@ -25,6 +25,7 @@ function App() {
    async function addNewTransaction(ev){
     ev.preventDefault()
     const url = process.env.REACT_APP_API_URL+'transaction';
+    console.log(url)
     const response = await fetch(url, {
       method: "POST",
       headers: {"Content-type": "application/json"},
