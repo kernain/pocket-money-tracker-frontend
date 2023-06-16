@@ -92,7 +92,6 @@ function App() {
                   )}
                   <div className="datetime">
                     {transaction.datetime
-                      .toISOString()
                       .replace("T", " ")
                       .replace("Z", "")}
                   </div>
